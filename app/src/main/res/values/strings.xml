@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Logino</string>
+    <string-array name="names">
+        <item>-- Please Select a State --</item>
+        <item>Jakarta</item>
+        <item>Malang</item>
+        <item>Surabaya</item>
+        <item>Solo</item>
+    </string-array>
+</resources>

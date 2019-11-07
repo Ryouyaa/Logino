@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".RegistActivity">
+
+    <TextView
+        android:id="@+id/regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Registration"
+        android:textColor="@color/white"
+        android:textSize="117px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/thin"
+        android:text="Name"
+        android:textColor="@color/red"
+        android:textSize="59px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/regist"
+        app:layout_constraintEnd_toStartOf="@+id/regist"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/regist"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/path" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="318dp"
+        android:layout_height="31dp"
+        android:background="@drawable/regist_field"
+        android:ems="14"
+        android:fontFamily="@font/regular"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/dark_grey"
+        android:textSize="55px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/thin"
+        android:text="Gender"
+        android:textColor="@color/red"
+        android:textSize="59px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputName"
+        app:layout_constraintVertical_bias="0.016" />
+
+
+    <TextView
+        android:id="@+id/State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/thin"
+        android:text="State"
+        android:textColor="@color/red"
+        android:textSize="59px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="327dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Gender"
+        app:layout_constraintTop_toBottomOf="@+id/Gender"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/lightBlue"
+            android:fontFamily="@font/regular"
+            android:text="Male"
+            android:textColor="@color/white"
+            android:textSize="59px" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/lightBlue"
+            android:fontFamily="@font/regular"
+            android:text="Female"
+            android:textColor="@color/white"
+            android:textSize="59px" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="316dp"
+        android:layout_height="30dp"
+        android:background="@drawable/dropdown_field"
+        android:fontFamily="@font/regular"
+        android:textSize="55px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/State"
+        app:layout_constraintTop_toBottomOf="@+id/State"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/lightBlue"
+        android:fontFamily="@font/thin"
+        android:text="Sign Up for Newsletter"
+        android:textColor="@color/white"
+        android:textSize="43px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner1"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/lightBlue"
+        android:fontFamily="@font/thin"
+        android:text="I Have Read and Agree of the Terms of Service"
+        android:textColor="@color/white"
+        android:textSize="43px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <Button
+        android:id="@+id/SignupBtn"
+        android:layout_width="322px"
+        android:layout_height="125px"
+        android:background="@drawable/button"
+        android:fontFamily="@font/regular"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:textSize="45px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox4"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+        app:layout_constraintVertical_bias="0.069" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
